@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - John Doe, Web Developer</title>
+    <title>About Me - Fletcher S, Web Developer</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your custom stylesheet -->
 </head>
 <body>
-    <header>
+    <header class="jumbotron text-center">
         <h1>About Me</h1>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="projects.html">Projects</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     
-    <article id="about">
-        <h2>Hi, I'm Fletcher S!</h2>
-        <img src="profile-picture.jpg" alt="John Doe">
-        
-        <p>I'm a passionate web developer with a deep love for creating exceptional online experiences. From a young age, I've been fascinated by technology and its potential to shape the way we interact with the world. That fascination led me down the path of web development, where I've been able to combine creativity and technical skills to bring ideas to life.</p>
-        
-        <p>My journey started by tinkering with HTML and CSS, and as I delved deeper, I quickly embraced JavaScript to add interactivity to my projects. Over the years, I've honed my skills in front-end and back-end technologies, always staying up-to-date with the latest trends and best practices.</p>
-        
-        <p>What truly drives me is the ability to craft seamless, user-friendly websites that provide value and a positive impact. Whether it's an e-commerce platform, a portfolio site, or a dynamic web application, I'm dedicated to delivering a memorable online presence.</p>
-        
-        <p>When I'm not coding, you can find me exploring the outdoors, indulging in a good book, or experimenting with new recipes in the kitchen. I believe that a well-rounded life outside of coding is essential for maintaining creativity and balance.</p>
-        
-        <p>If you're looking for a dedicated and skilled web developer to collaborate on your next project, I'd love to hear from you. Let's work together to turn your ideas into pixel-perfect reality!</p>
-    </article>
+    <section id="about" class="container py-5">
+        <h2 class="text-center">Hi, I'm Fletcher S!</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6" style="text-align: center;">
+                <img src="./images/person.png" alt="Fletcher S" class="img-fluid mb-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <p>I'm a passionate web developer with a deep love for creating exceptional online experiences. From a young age, I've been fascinated by technology and its potential to shape the way we interact with the world. That fascination led me down the path of web development, where I've been able to combine creativity and technical skills to bring ideas to life.</p>
+                
+                <p>My journey started by tinkering with HTML and CSS, and as I delved deeper, I quickly embraced JavaScript to add interactivity to my projects. Over the years, I've honed my skills in front-end and back-end technologies, always staying up-to-date with the latest trends and best practices.</p>
+                
+                <p>What truly drives me is the ability to craft seamless, user-friendly websites that provide value and a positive impact. Whether it's an e-commerce platform, a portfolio site, or a dynamic web application, I'm dedicated to delivering a memorable online presence.</p>
+                
+                <p>When I'm not coding, you can find me exploring the outdoors, indulging in a good book, or experimenting with new recipes in the kitchen. I believe that a well-rounded life outside of coding is essential for maintaining creativity and balance.</p>
+                
+                <p>If you're looking for a dedicated and skilled web developer to collaborate on your next project, I'd love to hear from you. Let's work together to turn your ideas into pixel-perfect reality!</p>
+            </div>
+        </div>
+    </section>
     
-    <footer>
-        <p>&copy; 2023 John Doe</p>
+    <footer class="text-center py-3">
+        <p>&copy; 2023 Fletcher S</p>
     </footer>
+    
+    <!-- Link to Bootstrap JS and jQuery (optional but may be needed for certain features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
